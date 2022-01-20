@@ -26,6 +26,18 @@
     <h1>Hello World</h1>
     <h3>Ciao {{ $name }} </h3>
 
+    <ul>
+      @foreach ($paragraphs as $paragraph)
+        @if (strlen($paragraph) > 300)
+          <strong>
+        @endif
+        <li>{{$paragraph}}</li>
+        @if (strlen($paragraph) > 300)
+          </strong>
+        @endif
+      @endforeach
+    </ul>
+
   </div>
 
 

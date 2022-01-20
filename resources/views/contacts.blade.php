@@ -23,8 +23,7 @@
       </li>
     </ul>
 
-    <h1>Hello World</h1>
-    <h3>Ciao {{ $name }} </h3>
+    <h1>Contacts</h1>
 
   </div>
 
